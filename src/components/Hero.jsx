@@ -1,19 +1,25 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Hero = () =>{
   return (
-    <motion.section className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden px-6 py-20">
+    <motion.section 
+    style={{ paddingTop: "100px" }}
+    className="relative min-h-screen flex flex-col 
+    justify-start items-center text-center 
+    bg-gradient-to-br from-gray-900 via-gray-800 to-black 
+    overflow-hidden pt-32 md:pt-40
+ px-6 position-relative">
       
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/30 via-pink-500/20 to-blue-500/30 blur-3xl opacity-40 animate-pulse pointer-events-none"></div>
 
       {/* Heading */}
       <motion.h1
-        initial={{ opacity: 0, y: -30 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-4"
+        className="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-4"
       >
         Hi, I'm{" "}
         <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 text-transparent bg-clip-text animate-gradient-x">
@@ -26,7 +32,7 @@ export const Hero = () =>{
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
-        className="mt-2 text-xl md:text-2xl text-gray-300 font-mono mb-8"
+        className="mt-2 text-lg sm:text-xl md:text-2xl text-gray-300 font-mono mb-8"
       >
         <span className="border-r-2 border-purple-400 pr-1 animate-pulse">
           Frontend Developer 🚀
@@ -49,7 +55,7 @@ export const Hero = () =>{
           <FaGithub className="hover:fill-white" />
         </a>
         <a
-          href="www.linkedin.com/in/jividesh-r-b1b12b1b8"
+          href="https://www.linkedin.com/in/jividesh-r-b1b12b1b8/"
           target="_blank"
           rel="noreferrer"
           className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -66,11 +72,10 @@ export const Hero = () =>{
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="text-gray-300 text-lg leading-relaxed text-center px-4"
+          className="text-gray-300 text-base sm:text-lg leading-relaxed text-center px-4 max-w-2xl"
         >
           Front-End Developer with 4 years of professional experience building scalable,
-          high-performance and interactive UI/UX web applications.
-          creating seamless user experiences that make a difference.
+          high-performance and interactive UI/UX web applications..
           Passionate about writing clean, maintainable code and 
            continuously upskilling in backend technologies and AI-driven applications to grow as a 
            full-stack engineer.
@@ -81,7 +86,9 @@ export const Hero = () =>{
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.3, delay: 1.4 }}
-          className="text-left text-sm sm:text-base bg-[#1e1e1e] text-gray-200 font-mono p-6 rounded-lg shadow-xl border border-gray-700 w-full max-w-xl overflow-x-auto"
+          className="text-left text-sm sm:text-base bg-[#1e1e1e] 
+text-gray-200 font-mono p-5 sm:p-6 rounded-lg shadow-xl 
+border border-gray-700 w-full max-w-xl overflow-x-auto"
         >
           <code>
             <span className="text-purple-400">const</span>{" "}
@@ -101,6 +108,7 @@ export const Hero = () =>{
             : <span className="text-yellow-300">"India"</span>,{"\n"}
             &nbsp;&nbsp;<span className="text-green-400">contact</span>
             : <span className="text-yellow-300">"jividesh7@gmail.com"</span>
+
             {"\n"}
             {"};"}
           </code>
@@ -115,7 +123,7 @@ export const Hero = () =>{
         >
           <a
             href="#projects"
-            className="px-6 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg hover:shadow-purple-500/50 transition transform hover:scale-105"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-lg hover:shadow-purple-500/50 transition transform hover:scale-105"
           >
             View My Projects
           </a>
@@ -134,7 +142,7 @@ export const Hero = () =>{
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-6 flex flex-col items-center text-gray-400"
+        className="aabsolute bottom-6 hidden sm:flex flex-col items-center text-gray-400"
       >
         <div className="w-[2px] h-12 bg-gradient-to-b from-gray-400 to-transparent animate-bounce"></div>
         <span className="text-xs mt-2">Scroll Down</span>

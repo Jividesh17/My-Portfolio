@@ -100,7 +100,7 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="skills min-h-screen flex flex-col items-center justify-center py-16 bg-[var(--background)] text-[var(--text-color)]"
+      className="skills min-h-screen flex flex-col items-center justify-center py-16 bg-[var(--section-bg-alt)] text-[var(--text-color)]"
    >
       <div className="max-w-5xl mx-auto px-6 w-full">
         {/* Centered Title */}

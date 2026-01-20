@@ -19,11 +19,12 @@ function App() {
   return (
     <div className={`app ${isLoaded ? "loaded" : ""}`}>
     <Navbar/>
-
+<main className="pt-[80px]">
     <Hero/>
     <Skills/>
     <Projects/>
     <Contact/>
+    </main>
     <motion.footer className='footer' 
     initial={{opacity: 0}} 
     whileInView={{opacity:1}}
